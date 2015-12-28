@@ -511,7 +511,7 @@ class QuickBooks_Callbacks
 				if ($Driver)
 				{
 					// Log the callback for debugging
-					$Driver->log('Calling callback [' . $type . ']: ' . print_r($callback, true), $ticket, QUICKBOOKS_LOG_DEVELOP);
+//					$Driver->log('Calling callback [' . $type . ']: ' . print_r($callback, true), $ticket, QUICKBOOKS_LOG_DEVELOP);
 				}
 				
 				$vars = array( $requestID, $user, $hook, &$err, $hook_data, $callback_config );

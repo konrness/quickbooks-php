@@ -95,7 +95,7 @@ class QuickBooks_XML_Parser
 	/**
 	 * 
 	 */
-	const BACKEND_BUILTIN = 'builtin';
+	const BACKEND_BUILTIN = 'BuiltIn';
 	
 	/**
 	 * Create a new QuickBooks_XML parser object
@@ -118,7 +118,7 @@ class QuickBooks_XML_Parser
 			$use_backend = QuickBooks_XML::PARSER_BUILTIN;
 		}
 		
-		$class = 'QuickBooks_XML_Backend_' . ucfirst(strtolower($use_backend));
+		$class = 'QuickBooks_XML_Backend_' . $use_backend;
 		$this->_backend = new $class($xml_or_file);
 	}
 	

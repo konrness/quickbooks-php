@@ -93,7 +93,7 @@ class QuickBooks_XML
 	/**
 	 * 
 	 */
-	const PARSER_BUILTIN = 'builtin';
+	const PARSER_BUILTIN = 'BuiltIn';
 	
 	/**
 	 * 

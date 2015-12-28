@@ -213,7 +213,7 @@ class QuickBooks_WebConnector_Server
 	 */
 	protected function _adapterFactory($adapter, $wsdl, $soap_options, $loglevel)
 	{
-		$adapter = ucfirst(strtolower($adapter));
+		$adapter = $adapter;
 		
 		$file = '/QuickBooks/Adapter/Server/' . $adapter . '.php';
 		$class = 'QuickBooks_Adapter_Server_' . $adapter;
