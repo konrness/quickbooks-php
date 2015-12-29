@@ -258,12 +258,12 @@ define('QUICKBOOKS_LOCALE_OE', QUICKBOOKS_LOCALE_ONLINE_EDITION);
 /**
  * Use the PHP SoapServer ext/soap PHP extension
  */
-define('QUICKBOOKS_SOAPSERVER_PHP', 'php');
+define('QUICKBOOKS_SOAPSERVER_PHP', 'PHP');
 
 /**
  * Use the built-in pure PHP SOAP server
  */
-define('QUICKBOOKS_SOAPSERVER_BUILTIN', 'builtin');
+define('QUICKBOOKS_SOAPSERVER_BUILTIN', 'Builtin');
 
 /**
  * QuickBooks flag to request to enter "Interactive Mode"
