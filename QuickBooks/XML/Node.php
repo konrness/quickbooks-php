@@ -692,11 +692,7 @@ class QuickBooks_XML_Node
 			}
 			else
 			{
-				if ($node->data() == '__EMPTY__')		// ick, bad hack 
-				{
-					$xml .= str_repeat($indent, $tabs) . '<' . $node->name() . '></' . $node->name() . '>' . "\n";
-				}
-				else if ($node->hasData() or $empty == QuickBooks_XML::XML_PRESERVE)
+				if ($node->hasData() or $empty == QuickBooks_XML::XML_PRESERVE)
 				{
 					// Double-encode is *off*
 					//$xml .= str_repeat($indent, $tabs) . '<' . $node->name() . '>' . QuickBooks_XML::encode($node->data(), true, false) . '</' . $node->name() . '>' . "\n";
